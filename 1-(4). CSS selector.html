@@ -2,13 +2,24 @@
 <html lang="ko">
     <head>
         <meta charset="utf-8">
-        <title>CSS</title>
-        <link href="./test_css.css" rel="stylesheet">
+        <title>CSS 선택자 실습</title>
+        <style media = "screen">
+            /*
+            .html { color : greenyellow; }
+            .css { color : skyblue; text-decoration : underline; }
+            #id-selector { font-size : 30px; }
+            */
+
+            p[class ~= "selector"] { font-size : 20px; }
+            p[class ^= "selector"] { color : red; }
+            p[class $= "selector"] { text-decoration : line-through; }
+            p[class *= "selector"] { text-decoration : underline; }
+        </style>
     </head>
     <body>
-        <h2 style="color: gray";>CSS Start</h2>
-        <p>
-            이것은 실습용 더미 텍스트입니다. 이것은 실습용 더미 텍스트입니다. 이것은 실습용 더미 텍스트입니다. 이것은 실습용 더미 텍스트입니다.
-            이것은 실습용 더미 텍스트입니다. 이것은 실습용 더미 텍스트입니다. 이것은 실습용 더미 텍스트입니다. 이것은 실습용 더미 텍스트입니다.
-        </p>
+        <p class = "selector">속성값 선택자 실습을 위한 문구</p>
+        <p class = "abc selector">어떤 것이 선택될까요</p>
+        <p class = "selectortest">맞춰보세요</p>
+
+        <p id="id-selector">ID 선택자를 위한 문구</p>
     </body>
