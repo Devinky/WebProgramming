@@ -1,0 +1,48 @@
+div {
+  width: 500px;
+  height: 400px;
+  background-color: #ffff00;
+  border: 1px solid #ff0000;
+}
+
+div>h1 {
+  width: 200px;
+  height: 50px;
+  background-color: aqua;
+  border: 1px solid #ff0000;
+}
+
+div>h2 {
+  width: 100px;
+  height: 50px;
+  background-color: aliceblue;
+  border: 1px solid #ff0000;
+}
+
+div>h3 {
+  width: 150px;
+  height: 50;
+  background-color: azure;
+  border: 1px solid #ff0000;
+}
+
+div>h4 {
+  width: 100px;
+  height: 50px;
+  background-color: black;
+  border: 1px solid #ff0000;
+}
+
+div>h5 {
+  width: 120px;
+  height: 50px;
+  background-color: violet;
+  border: 1px solid #ff0000;
+}
+
+div>h6 {
+  width: 100px;
+  height: 50px;
+  background-color: tomato;
+  border: 1px solid #ff0000;
+}
