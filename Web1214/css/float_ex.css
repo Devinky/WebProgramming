@@ -1,0 +1,45 @@
+.parent {
+  width: 500px;
+  height: auto;
+  border: 10px solid #ff0000;
+  margin: 0 auto;
+
+}
+
+.parent .sub {
+  width: 50px;
+  height: 50px;
+  border: 1px solid #0000ff;
+  float: left;
+}
+
+/*sub클래스에 공통된 요소를 주고, 다른 하나에는 특정한 스타일을 주고 싶을때 사용*/
+.parent .sub.sub1 {
+  background-color: blueviolet;
+  width: 90px;
+  /*float: right;*/
+}
+
+.parent .sub.sub2 {
+  background-color: aqua;
+  width: 100px;
+  /*float: left;*/
+}
+
+.parent .sub.sub3 {
+  background-color: cadetblue;
+  width: 110px;
+  /*float: right;*/
+}
+
+.parent .sub.sub4 {
+  background-color: yellowgreen;
+  width: 120px;
+
+}
+
+.parent .sub.sub5 {
+  background-color: tomato;
+  width: 130px;
+
+}
