@@ -1,0 +1,39 @@
+#wrap {
+  width: 100%;
+  height: auto;
+  border: 1px solid #ff0000;
+}
+
+.header {
+  width: 1600px;
+  height: auto;
+  border: 1px solid #ff0000;
+  margin: auto;
+}
+
+.nav {
+  width: 1000px;
+  height: 100px;
+  margin: auto;
+  border: 1px solid #ff0000;
+  background-color: bisque;
+}
+
+.test {
+  width: 200px;
+  height: auto;
+  background-color: rgb(251, 255, 141);
+  border: 1px solid rgb(51, 139, 255);
+  text-align: center;
+  margin: auto;
+}
+
+.nav>ul>li {
+  width: 33.1%;
+  height: 50px;
+  background-color: chartreuse;
+  border: 1px solid #ff0000;
+  margin: auto;
+  text-align: center;
+  float: left;
+}
