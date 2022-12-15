@@ -1,0 +1,50 @@
+@import url(reset.css);
+
+/*inline*/
+.inline {
+  width: 400px;
+  height: 200px;
+  border: 1px solid;
+  margin: 0 auto;
+
+}
+
+.inline a {
+  /*display: block;*/
+  width: 100px;
+}
+
+.inline a:link {
+  background-color: #ff0000;
+}
+
+.inline a:hover {
+  background-color: #0033ff;
+  color: aliceblue;
+  text-decoration: underline;
+}
+
+.inline a:active {
+  background-color: #00ff22;
+  color: rgb(255, 168, 55);
+  text-decoration: none;
+}
+
+.inline a:visited {
+  background-color: #e4d764;
+  color: rgb(79, 79, 79);
+  text-decoration: none;
+}
+
+.inline img {
+  width: 100px;
+  height: 50px;
+}
+
+.inline a.aImag img {
+  display: block;
+}
+
+span {
+  background-color: bisque;
+}

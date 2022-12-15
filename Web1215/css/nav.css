@@ -1,0 +1,76 @@
+#wrap {
+  width: 1600px;
+}
+
+.header {
+  width: 100%;
+  height: auto;
+  border: 1px solid;
+  margin: 0 auto;
+}
+
+.header .nav {
+  /*브라우저 width가 1000px까지는 모양을 유지*/
+  /*브라우저 width가 1000px이하면 부모의 100%*/
+  width: 100%;
+  max-width: 1000px;
+  height: auto;
+  border: 1px solid #ff0000;
+  margin: 0 auto;
+}
+
+.header .nav::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.header .nav h1.logo {
+  width: 100px;
+  height: 80px;
+  border: 1px solid #0000ff;
+  text-align: center;
+  line-height: 80px;
+  font-size: 20px;
+  float: left;
+}
+
+.header .nav .gnb {
+  width: 400px;
+  height: auto;
+  border: 1px solid #0000ff;
+  float: right;
+}
+
+.header .nav .gnb ul {
+  border: 2px solid;
+}
+
+.header .nav .gnb ul::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.header .nav .gnb ul li {
+  /*나중에 활약함*/
+  width: 20%;
+  height: 80px;
+  border: 1px solid;
+  box-sizing: border-box;
+  text-align: center;
+  line-height: 80px;
+  float: left;
+}
+
+.container {
+  width: 100%;
+  height: auto;
+  border: 1px solid;
+}
+
+.footer {
+  width: 100%;
+  height: auto;
+  border: 1px solid;
+}
