@@ -1,0 +1,73 @@
+@import url(reset.css);
+
+/*header*/
+.header {
+  width: 100%;
+  height: auto;
+  padding: 50px 0;
+  /* border: 1px solid #000000; */
+  box-sizing: border-box;
+  background-color: #cbcbcb;
+}
+
+.header .nav {
+  width: 100%;
+  max-width: 1200px;
+  /* border: 1px solid; */
+  box-sizing: border-box;
+  margin: 0 auto;
+  background-color: #a9a9a9;
+  background-image: url(/images/test1.jpg);
+}
+
+.header .nav::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.header .nav h1.logo {
+  width: 100px;
+  height: 80px;
+  /* border: 1px solid; */
+  float: left;
+  text-align: center;
+  line-height: 80px;
+  background-color: black;
+}
+
+.header .nav h1.logo a {
+  color: aliceblue;
+}
+
+.header .nav .gnb {
+  width: 500px;
+  height: auto;
+  /* border: 1px solid; */
+  float: right;
+}
+
+.header .nav .gnb>ul {}
+
+.header .nav .gnb>ul::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.header .nav .gnb>ul>li {
+  width: 20%;
+  height: 80px;
+  /* border: 1px solid; */
+  box-sizing: border-box;
+  float: left;
+  text-align: center;
+  line-height: 80px;
+  background-color: rgb(126, 126, 126);
+}
+
+.header .nav .gnb>ul>li a:hover {
+  display: block;
+  background-color: rgb(34, 34, 34);
+  color: rgb(255, 255, 255);
+}
