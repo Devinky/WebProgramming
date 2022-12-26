@@ -1,0 +1,17 @@
+@import url(reset.css);
+
+/*footer*/
+.footer {
+  background-color: black;
+}
+
+.fcon {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 200px;
+  background-color: #222222;
+  color: aliceblue;
+  text-align: center;
+  line-height: 200px;
+}

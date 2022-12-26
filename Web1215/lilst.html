@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LIST</title>
+  <style>
+    /*내부 스타일 지정*/
+    h1 {
+      width: auto;
+      /*width를 auto로 설정하면 부모100%*/
+      background-color: cadetblue;
+    }
+
+    ul,
+    li {
+      list-style: none;
+    }
+  </style>
+</head>
+
+<body>
+  /*css없이 하겠음~*/
+  <h1>ol(Ordered List) : 순서가 있는 리스트</h1>
+  <ol type="i" style="background-color: #00ffff"> /*type i를 지정하면 그리스숫자로 나옴*/
+    <li>리스트1</li>
+    <li>리스트2</li>
+    <li>리스트3</li>
+    <li>리스트4</li>
+    <li>리스트5</li>
+  </ol>
+  <h1>ul, li(서로 짝꿍) : 순서가 없는 리스트, list-style을 none으로 설정</h1>
+  <ul>
+    <li>리스트1</li>
+    <li>리스트2</li>
+    <li>리스트3</li>
+    <li>리스트4</li>
+    <li>리스트5</li>
+  </ul>
+  <h1>dl, dt, dd</h1>
+  <dl>
+    <dt>dt 리스트 제목</dt>
+    <dl>dl리스트1</dl>
+    <dl>dl리스트2</dl>
+    <dl>dl리스트3</dl>
+    <dl>dl리스트4</dl>
+    <dl>dl리스트5</dl>
+  </dl>
+</body>
+
+</html>

@@ -1,0 +1,29 @@
+@charset "UTF-8";
+@import url("common/reset.css");
+@import url("common/header.css");
+@import url("common/footer.css");
+
+/* container */
+.container{
+	width: 100%;
+	background-color: #8080ff;
+	background: url("../images/cosmos.png") no-repeat 50%/cover; /* 이미지 넣는 방법 */
+}
+
+.container .login{
+	display: flex;
+	justify-content: center;
+	padding: 20px 0;
+	box-sizing: border-box;
+}
+
+.container .login .login-con{
+	width: 1200px;
+	height: 600px;
+	border: 0px solid;
+	box-sizing: border-box;
+	background-color: #ffffff;
+	text-align: center;
+	line-height: 600px;
+	font-size: 50px;
+}
