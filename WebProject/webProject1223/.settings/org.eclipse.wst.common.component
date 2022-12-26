@@ -2,9 +2,12 @@
     <wb-module deploy-name="webProject1223">
         <wb-resource deploy-path="/" source-path="/WebContent" tag="defaultRootSource"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src"/>
+<<<<<<< HEAD
         <dependent-module archiveName="ojdbc6.jar" deploy-path="/WEB-INF/lib/" handle="module:/resource/ojdbc6/ojdbc6">
             <dependency-type>uses</dependency-type>
         </dependent-module>
+=======
+>>>>>>> 263a9f2e18ec3cbaafcd454f967e9156402578d5
         <property name="context-root" value="webProject1223"/>
         <property name="java-output-path" value="/webProject1223/build/classes"/>
     </wb-module>

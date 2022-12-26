@@ -1,0 +1,79 @@
+@import url(reset.css);
+
+/*header*/
+.header {
+  width: 100%;
+  height: auto;
+  padding: 50px 0;
+  /* border: 1px solid #000000; */
+  box-sizing: border-box;
+  background-color: #cbcbcb;
+}
+
+.header .nav {
+  width: 100%;
+  max-width: 1200px;
+  /* border: 1px solid; */
+  box-sizing: border-box;
+  margin: 0 auto;
+  background-color: #a9a9a9;
+  background-image: url(/images/nav_image.png);
+}
+
+.header .nav::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.header .nav h1.logo {
+  width: 100px;
+  height: 80px;
+  /* border: 1px solid; */
+  float: left;
+  text-align: center;
+  line-height: 80px;
+  background-color: rgb(29, 29, 27);
+  background-image: url(/images/star_logo.png);
+  background-size: 100px 80px;
+}
+
+.header .nav h1.logo a {
+  color: #51C6CF;
+}
+
+.header .nav .gnb {
+  width: 500px;
+  height: auto;
+  /* border: 1px solid; */
+  float: right;
+}
+
+/* .header .nav .gnb>ul {} */
+
+.header .nav .gnb>ul::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.header .nav .gnb>ul>li {
+  width: 20%;
+  height: 80px;
+  /* border: 1px solid; */
+  box-sizing: border-box;
+  float: left;
+  text-align: center;
+  line-height: 80px;
+  background-color: rgb(29, 29, 27);
+}
+
+.header .nav .gnb>ul>li a{
+  color: white;
+}
+
+.header .nav .gnb>ul>li a:hover {
+  display: block;
+  background-color: rgb(141, 141, 141);
+  color: rgb(0, 0, 0);
+}

@@ -1,0 +1,75 @@
+@import url(common/reset.css);
+@import url(common/header.css);
+@import url(common/footer.css);
+
+#wrap {
+  width: 100%;
+  height: auto;
+}
+
+.container {
+  border: 1px solid;
+  box-sizing: border-box;
+}
+
+.container .join {
+  height: auto;
+  border: 1px solid;
+  box-sizing: border-box;
+}
+
+.container .join .join-form {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  border: 1px solid;
+  box-sizing: border-box;
+}
+
+
+/* 테이블 작업할 때 무조건 써줘야 함 */
+table,
+th,
+td {
+  border: 1px solid #cccccc;
+  border-collapse: collapse;
+  margin: 50px auto;
+}
+
+.container .join .join-form table {
+  width: 100%;
+}
+
+.join-form table tr th {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 20px 50px;
+  box-sizing: border-box;
+  font-size: 30px;
+}
+
+.join-form table tr td {
+  border: 1px solid #cccccc;
+  padding: 10px 10px;
+  box-sizing: border-box;
+}
+
+.join-form table tr:nth-child(7) td textarea {
+  width: 100%;
+  resize: none;
+}
+
+.join-form table tr.lastTr td {
+  width: 100;
+  background-color: #555555;
+  display: flex;
+}
+
+.join-form table tr.lastTr input {
+
+  padding: 5px;
+}
+
+#phone {
+  width: 60px;
+}

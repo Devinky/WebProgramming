@@ -3,7 +3,10 @@
 	<name>webProject1223</name>
 	<comment></comment>
 	<projects>
+<<<<<<< HEAD
 		<project>ojdbc6</project>
+=======
+>>>>>>> 263a9f2e18ec3cbaafcd454f967e9156402578d5
 	</projects>
 	<buildSpec>
 		<buildCommand>

@@ -64,8 +64,12 @@ public class MemberDao {
 		return result;
 	}
 	
+<<<<<<< HEAD
 	public int JoinOkDo(String userId, String userPw, String userName, String gender, String hobbit, 
 			String phone, String memo) {
+=======
+	public int JoinOkDo(String userId, String userPw, String userName, String gender, String hobbit, String phone, String memo) {
+>>>>>>> 263a9f2e18ec3cbaafcd454f967e9156402578d5
 		int result = 0;
 		
 		Connection conn = null;
@@ -74,7 +78,11 @@ public class MemberDao {
 		
 		try {
 			conn = DBConnect.getConnection();
+<<<<<<< HEAD
 			query = "insert into member1219(userId, userPw, userName, gender, hobbit, phone, memo) "
+=======
+			query = "insert into test_tb_1219(userId, userPw, userName, gender, hobbit, phone, memo) "
+>>>>>>> 263a9f2e18ec3cbaafcd454f967e9156402578d5
 					+ "values(?,?,?,?,?,?,?)";
 			pstm = conn.prepareStatement(query);
 			
