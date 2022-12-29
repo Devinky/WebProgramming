@@ -1,4 +1,4 @@
-<%@page import="org.project.dto.MemberDto2"%>
+<%@page import="org.study.dto.MemberDto2"%>
 <%@page import="java.util.ArrayList"%>
 <%@page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%> 
 

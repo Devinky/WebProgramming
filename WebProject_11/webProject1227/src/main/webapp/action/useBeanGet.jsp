@@ -1,7 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
     
-<jsp:useBean id="myBean" class="org.project.dto.MemberBean"/>
+<jsp:useBean id="myBean" class="org.study.dto.MemberBean"/>
 
 <jsp:setProperty name="myBean" property="no" value="11"/>
 <jsp:setProperty name="myBean" property="userId" value="root"/>

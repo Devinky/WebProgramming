@@ -7,7 +7,7 @@
 <title>beanTest1</title>
 </head>
 <body>
-<jsp:useBean id="member" class="org.project.dto.MemberBean" scope="page">
+<jsp:useBean id="member" class="org.study.dto.MemberBean" scope="page">
 
 	<jsp:setProperty name="member" property="no" param="no"/>
 	<jsp:setProperty name="member" property="userId" param="userId"/>
@@ -17,7 +17,7 @@
 
 </jsp:useBean>
 
-<jsp:useBean id="member2" class="org.project.dto.MemberBean">
+<jsp:useBean id="member2" class="org.study.dto.MemberBean">
 	<jsp:setProperty name="member2" property="*"/>
 </jsp:useBean>
 	
