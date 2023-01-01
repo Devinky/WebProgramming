@@ -13,12 +13,6 @@ select * from member1228;
 
 drop table member1228;
 
-select * from member1228 where userId='m1';
-
-delete from member1228 where userId='inky5';
-
 insert into member1228(userId, userPw, userName) values('m1','1111','name1');
 insert into member1228(userId, userPw, userName) values('m2','2222','name2');
 insert into member1228(userId, userPw, userName) values('m3','3333','name3');
-
-insert into member1228(userId, userPw, userName) values('admin','11','admin');
