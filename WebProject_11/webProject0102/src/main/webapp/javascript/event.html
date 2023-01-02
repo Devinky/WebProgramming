@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>EVENT</title>
+<script src="js/event.js" defer></script>
+<style>
+	*{
+		margin: 0;
+		padding: 0;
+	}
+	
+	#header{
+		border: 1px solid;
+		display: flex;
+		justify-content: center;
+		padding: 50px 0;
+	}
+	
+	#header .gnb {
+	flex: 0 1 800px;
+	display: flex;
+	justify-content: space-between;
+	padding: 10PX;
+	background-color: #555555;
+	}
+
+	#header .gnb button {
+	width: 80px;
+	padding: 5px 10px;
+	border: 1px solid #cccccc;
+	box-sizing: border-box;
+	background-color: #555555;
+	color: #ffffff;
+	}
+
+	#header .gnb button:hover {
+	cursor: pointer;
+	border: 1px solid #222222 !important;
+	background-color: #550055 !important;
+	color: #ffffff !important;
+	box-sizing: border-box;
+	transition: all 0.5s;
+	}
+	
+	.container{
+		width: 100%;
+		min-height: 100vh;
+		border: 1px solid;
+		box-sizing: border-box;
+		display: flex;
+		justify-content: center; /*가로 가운데 정렬*/
+		align-items: center; /*세로 가운데 정렬*/
+	}
+	
+/* 	.container h1{
+		width: 200px;
+		list-style: 50px;
+		border: 1px solid;
+		box-sizing: border-box;
+		text-align: center;
+	} */
+	
+	.container .gallery{
+		flex: 0 1 1200px;
+		height: auto;
+		border: 1px solid;
+		box-sizing: border-box;
+		overflow: hidden;
+	}
+	
+	.container .gallery ul{
+		width: 100%;
+		display: flex;
+		justify-content: space-between; 	
+	}
+	
+	.container .gallery ul li{
+		flex: 1;
+		height: 400px;
+		border: 1px solid #000000;	
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		font-size: 50px;
+	}
+	
+	.add-top{
+		background-color: #00ff00;
+		position: sticky;
+		top: 0;
+		z-index: 1000;
+	}
+</style>
+</head>
+<body>
+<div id="header">
+	<div class="gnb">
+		<button id="btn1">BUTTON1</button>
+		<button id="btn2">BUTTON2</button>
+		<button id="btn3">BUTTON3</button>
+		<button id="btn4">BUTTON4</button>
+		<button id="btn5">BUTTON5</button>
+		
+		<form action="searchOk" id="serachForm" method="post">
+			<input type="text" name="search" id="search" />
+			<input type="submit" value="검색1" id="searchOk"/>
+			<input type="submit" value="검색2" id="searchBtnOk"/>
+		</form>
+	</div>
+</div>
+<div class="container">
+	<div class="gallery">
+		<ul>
+			<li>GALLERY1</li>
+			<li>GALLERY2</li>
+			<li>GALLERY3</li>
+			<li>GALLERY4</li>
+			<li>GALLERY5</li>
+		</ul>
+	</div>
+</div>
+</body>
+</html>

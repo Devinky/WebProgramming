@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>JOIN</title>
+<!-- <script src="js/join.js" defer></script>
+<!-- <script src="js/operator.js" defer></script> -->
+<script src="js/joinOk.js" defer></script>
+</head>
+<body>
+<form action="test.do" method="post" id="joinForm">
+
+	ID : <input type="text" name="userId" id="userId" /> <br>
+	Password : <input type="password" name="userPw" id="userPw" /> <br>
+	Name : <input type="text" name="userName" id="userName" /> <br>
+	
+	취미 :
+	<input type="checkbox" name="hobbys" class="hobbys" value="운동" checked/>운동
+	<input type="checkbox" name="hobbys" class="hobbys" value="게임" />게임
+	<input type="checkbox" name="hobbys" class="hobbys" value="독서" />독서 <br>
+	
+	거주지 :
+	<select name="city" id="city">
+		<option value="">::선택::</option>
+		<option value="서울">서울</option>
+		<option value="제주">제주</option>
+		<option value="부산">부산</option>
+	</select><br>
+	
+	성별 :
+	<input type="radio" name="gender" class="gender" value="여성" checked/>여성
+	<input type="radio" name="gender" class="gender" value="남성"/>남성 <br>
+	
+	<input type="submit" value="가입" class="joinOkClass"/>
+	<input type="button" value="가입2" id="joinOkBtn"/>
+	
+</form>
+</body>
+</html>
