@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>JSON</title>
+</head>
+<body>
+<div class="gnb">
+	<ul>
+		<li class="li1">LIST1</li>
+		<li id="li2">LIST2</li>
+		<li>LIST3</li>
+		<li>LIST4</li>
+		<li>LIST5</li>
+	</ul>
+</div>
+<script>
+const li1_1 = document.querySelectorAll('.gnb>ul>li'); //첫번째 클래스
+			li1_1[0]; //li -> 리스트 중에서 첫번째 요소
+const li1_2 = document.querySelectorAll('.li1'); //첫번째 클래스
+const li1_3 = document.querySelector('.li1'); //li1 하나만 있는 클래스
+
+//li1_3을 클릭하면 naver로 이동하도록
+li1_3.addEventListener('click', function(){
+	alert('네이버로 이동합니다');
+	location.href='http://naver.com';
+});
+
+const gnbLi = document.querySelectorAll('.gnb>ul>li');
+
+gnbLi.forEach(function(element){
+	element.style.border = '1px solid #00ff00';
+/* 	element.style.backgroundColor = '#00ff00'; */
+	element.style.width = '100px';
+	element.style.height = '100px';
+	console.log(element);
+});
+gnbLi.forEach(function(element, index){
+	console.log(element + " " + index);
+});
+gnbLi.forEach(function(element, index, list){
+	console.log(element + " " + index + " " + list);
+});
+
+//자바스크립트 객체
+const obj1 = {
+		//속성: 값
+		userId:'m1',
+		userPw: '11',
+		arrayColor:['red','blue','yellow'],
+		option: true,
+		//메서드: function()
+		method1: function(){
+			console.log('메서드 Method1');
+		},
+		//다른 객체: {}
+		obj1Sub:{
+			obj1SubMethod: function(){
+				console.log('메서드 obj1SubMethod');	
+			}
+		}
+	};
+
+//new Object(); 객체 생성
+const obj2 = new Object();
+obj2.name = 'm1';
+obj2.age = 22;
+
+//생성자
+function obj3(name, age){
+	this.name = name;
+	this.age = age;
+	this.method3 = function(){
+		console.log('method3');
+	}
+}
+const o1 = new obj3('m1',11);
+const o2 = new obj3('m2',22);
+
+const json1 = {
+		'userId':'m1',
+		'userPw':'11',
+		'userName':'s1'
+		};
+		
+//window.open('보여질 웹페이지', '생략', 'width=너비, height=높이, left=좌, top=위')
+//window.open('http://naver.com', '', 'width=400, height=400, left=500, top=300')
+
+</script>
+</body>
+</html>
