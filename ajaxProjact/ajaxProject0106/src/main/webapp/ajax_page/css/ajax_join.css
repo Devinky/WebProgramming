@@ -1,0 +1,90 @@
+@charset "UTF-8";
+@import url(common/reset.css);
+/*ajax_join*/
+
+.ajaxJoin{
+	width: 100%;
+	height: 100vh;
+	background: url(../img/bg.svg);
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+.ajaxJoin .ajaxJoin-con{
+	width: 400px;
+	border: 1px solid #000000;
+	padding: 15px;
+	box-sizing: border-box;
+}
+
+.ajaxJoin .ajaxJoin-con .join-form{
+	border: 0px solid #000000;
+}
+
+.ajaxJoin .ajaxJoin-con .join-form ul{
+	display: flex;
+	flex-direction: column; /*열 방향이 수직이 되도록*/
+	gap: 10px;
+}
+
+.ajaxJoin .ajaxJoin-con .join-form ul li{
+	border: 0px solid #000000;
+}
+
+.ajaxJoin .ajaxJoin-con .join-form ul li:nth-child(1){
+	/*li의 첫번째 자식요소*/
+	background-color: #00000099;
+	text-align: center;
+	color: #ffffff;
+	padding: 5px 0;
+	box-sizing: boder-box;
+}
+
+.ajaxJoin .ajaxJoin-con .join-form ul li:nth-child(1) h1{
+	font-weight: 300;
+	font-size: 30px
+}
+
+.ajaxJoin .ajaxJoin-con .join-form ul li.class1{
+	padding: 5px 10px;
+	display: flex;
+}
+																							/*.class1.one*/
+.ajaxJoin .ajaxJoin-con .join-form ul li.class1.one{
+	background-color: #cccccc;
+}
+
+.ajaxJoin .ajaxJoin-con .join-form ul li.class1.one label{
+	color: #ffffff;
+	line-height: 25px;
+}
+
+.ajaxJoin .ajaxJoin-con .join-form ul li.class1.one input{
+	flex: 1; /*부모의 1비율(하나일 경우 부모의 100% 너비를 가진다)*/
+	line-height: 25px;
+	padding: 0 10px;
+	box-sizing: border-box;
+	border: 0;
+}
+
+.ajaxJoin .ajaxJoin-con .join-form ul li.class1.two{
+	justify-content: space-between;
+	gap: 10px;
+}
+
+.ajaxJoin .ajaxJoin-con .join-form ul li.class1.two .sub{
+	flex: 1;
+	border: 0;
+	background-color: #000000;
+	color: #ffffff;
+	text-align: center;
+	line-height: 30px;
+	cursor: pointer; /*마우스 커서 모양 변화*/
+}
+
+.ajaxJoin .ajaxJoin-con .join-form ul li.class1.two .sub:hover{
+	background-color: #cccccc;
+	color: #000000;
+}
