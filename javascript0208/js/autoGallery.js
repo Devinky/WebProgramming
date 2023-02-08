@@ -4,7 +4,7 @@ const arrImage = [];
 let i = 0;
 
 for(let i=0;i<imageList.length;i++){
-  arrImage.push('url(../images/bar'+i+'.jpg) no-repeat 50%/cover');
+  arrImage.push('url(../images/model'+i+'.jpg) no-repeat 50%/cover');
   imageList[i].style.background = arrImage[i];
 }
 
