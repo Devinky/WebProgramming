@@ -1,0 +1,233 @@
+@import url(common/reset.css);
+
+.header {
+  border: 1px solid;
+  box-sizing: border-box;
+}
+
+.header .top-header {
+  background-color: tomato;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.header .bottom-header {
+  border: 1px solid;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  background-color: rgb(47, 47, 47);
+}
+
+.header .bottom-header .nav {
+  flex: 0 1 1600px;
+  border: 1px solid;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header .bottom-header .nav h1.logo {
+  flex: 0 0 120px;
+  height: auto;
+  /*이미지(120*60) -> 부모 요소는 height auto*/
+  background: url(/images/logo2.png);
+}
+
+.header .bottom-header .nav h1.logo img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.header .bottom-header .nav .gnb {
+  flex: 0 1 500px;
+  height: auto;
+  border: 1px solid;
+  box-sizing: border-box;
+}
+
+.header .bottom-header .nav .gnb>ul {
+  border: 1px solid;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.header .bottom-header .nav .gnb>ul>li {
+  line-height: 60px;
+  color: #ffffff;
+}
+
+.header .bottom-header .nav .gnb>ul>li a {
+  color: inherit;
+}
+
+.login-layer {
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(184, 184, 184, 0.531);
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+
+.login-layer .login-form {
+  color: #ffffff;
+  display: inherit;
+  flex-direction: column;
+  position: relative;
+  /*부모를 기준으로 잡는다↑*/
+}
+
+.login-layer .login-form span.close {
+  background-color: tomato;
+  color: #ffffff;
+  display: inline-block;
+  padding: 5px;
+  /*기준 요소(부모)를 중심으로 재배치↓*/
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.container {}
+
+.container .section.sec1 {
+  display: flex;
+  justify-content: center;
+}
+
+.container .section.sec1 .gallery {
+  flex: 0 1 1600px;
+  height: 600px;
+  border: 1px solid;
+  position: relative;
+}
+
+.container .section.sec1 .gallery .gallery-con {
+  width: 100%;
+  height: 600px;
+  position: absolute;
+  /* left: 0;
+  right: 0; */
+}
+
+.container .section.sec1 .gallery .gallery-con>ul {
+  width: inherit;
+  /*부모 요소의 크기 상속*/
+  height: inherit;
+}
+
+.container .section.sec1 .gallery .gallery-con>ul>li {
+  width: 100%;
+  height: 600px;
+  position: absolute;
+
+  visibility: hidden;
+  transition: all 0.5s;
+  opacity: 0;
+  /*원래 숨겨져 있다가*/
+}
+
+.fadeLi {
+  visibility: visible !important;
+  opacity: 1 !important;
+  /*순서가 다가오면 보이도록*/
+}
+
+/* .container .section.sec1 .gallery .gallery-con>ul>li:nth-child(1) {
+  background: url(../images/model0.jpg);
+}
+
+.container .section.sec1 .gallery .gallery-con>ul>li:nth-child(2) {
+  background: url(../images/model1.jpg);
+}
+
+.container .section.sec1 .gallery .gallery-con>ul>li:nth-child(3) {
+  background: url(../images/model2.jpg);
+}
+
+.container .section.sec1 .gallery .gallery-con>ul>li:nth-child(4) {
+  background: url(../images/model3.jpg);
+}
+
+.container .section.sec1 .gallery .gallery-con>ul>li:nth-child(5) {
+  background: url(../images/model4.jpg);
+} */
+
+.container .section.sec1 .gallery .arrow-con {
+  width: 100%;
+  position: absolute;
+  background-color: rgba(255, 228, 196, 0);
+  display: flex;
+  justify-content: space-between;
+  /*
+    부모의 세로 중앙에 배치하는 방법
+  */
+  /* transform: translate(-50%, -50%); */
+  top: 50%;
+  transform: translateY(-50%);
+  /*자동으로 세로중앙 정렬*/
+}
+
+.container .section.sec1 .gallery .arrow-con span.arrow {
+  display: block;
+  width: 30px;
+  height: 30px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.container .section.sec1 .gallery .arrow-con span.arrow:hover {
+  background-color: aquamarine;
+}
+
+.container .section.sec1 .gallery .item {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  /* background-color: #cc2b6e; */
+  display: flex;
+  justify-content: center;
+}
+
+.container .section.sec1 .gallery .item .item-con {
+  flex: 0 1 auto;
+  height: auto;
+  /* border: 1px solid; */
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+.container .section.sec1 .gallery .item .item-con ul {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 5px;
+}
+
+.container .section.sec1 .gallery .item .item-con ul li {
+  width: 20px;
+  height: 20px;
+  border: 1px solid #ffffff;
+  box-sizing: border-box;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.container .section.sec1 .gallery .item .item-con ul li:hover {
+  background-color: #cc2b6e;
+}
+
+
+.on {
+  background-color: #cc2b6e;
+}

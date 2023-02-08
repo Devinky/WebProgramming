@@ -1,0 +1,46 @@
+@import url(common/reset.css);
+
+.container{
+  width: 100%;
+}
+
+.container .gallery{
+  width: auto;
+  height: 100vh;
+  border: 1px solid;
+  padding: 50px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+}
+
+.container .gallery .gallery-con{
+  flex: 0 1 1000px;
+  height: 1200px;
+  /* border: 1px solid #ff0000; */
+}
+
+.container .gallery .gallery-con>ul{
+  width: inherit;
+  height: inherit;
+  /* border: 1px solid #00ff00 */
+}
+
+.container .gallery .gallery-con>ul>li{
+  width: 1000px;
+  height: inherit;
+  position: absolute;
+  border: 1px solid #ff00dd;
+  visibility: hidden;
+  transition: all 0.5s;
+  opacity: 0;
+}
+
+.container .gallery .gallery-con>ul>li:nth-child(1){
+  background: url(../images/bar0.jpg) no-repeat 50%/cover;
+}
+
+.fadeGallery{
+  visibility: visible !important;
+  opacity: 1 !important;
+}
